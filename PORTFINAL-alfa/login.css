@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #6634c8;
+}
+
+form {
+    background-color: #2c0c6b;
+    max-width: 400px;
+    width: 70%;
+    max-height: 420px;
+    height: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+}
+
+/* Título do form */
+
+form h3 {
+    text-align: center;
+    color: antiquewhite;
+    margin-top: 30px
+}
+
+/* Entrada de texto e senha */
+
+form input[type=text] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    border-radius: 7px;
+    margin-top: 50px;
+
+}
+form input[type=password] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+/* Botão de enviar */
+
+form input[type=submit] {
+    width: 100%;
+    height:40px;
+    cursor: pointer;
+    color: antiquewhite;
+    background-color: #6634c8;
+    border: 0;
+    border-radius: 7px;
+    margin-top: 30px;
+}
+
+form input[type=submit]:hover {
+    background-color: #542ca3;
+    transition: 0.3s;
+}
+
+/*link pro cadastro*/
+.cad{
+    margin-top: 10px;
+    color:antiquewhite;
+    text-align: end;
+    font-size: 13px;
+}
+
+/*cor do link*/
+form a{
+    color: #9169e0;
+}
+
+/*tamanho da fonte pra redefinir senha*/
+.senha {
+    font-size: 13px;
+}
+
