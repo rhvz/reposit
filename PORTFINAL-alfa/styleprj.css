@@ -108,6 +108,10 @@ button:hover{
     font-weight: 300;
 }
 
+.social-media {
+    margin-top: 20px;
+}
+
 .social-media a{
     color: white;
     padding: 10px;
@@ -115,7 +119,7 @@ button:hover{
 }
 
 .but {
-    margin-top: 15px;
+    margin-top: 20px;
 
 }
 
