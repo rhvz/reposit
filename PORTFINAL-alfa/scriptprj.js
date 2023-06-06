@@ -5,7 +5,7 @@ function validarCampos() {
   var senhaa2 = document.getElementById("senhaa2").value;
 
   if (email && user && senhaa && senhaa2) {
-     if (senha === senha2) {
+     if (senhaa === senhaa2) {
       window.location.href = "indexprj.html";
       alert("Usuário cadastrado com sucesso!!");
     } else {
