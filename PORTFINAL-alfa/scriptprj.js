@@ -7,7 +7,7 @@ function validarCampos() {
   if (email && user && senha && senha2) {
      if (senha === senha2) {
       window.location.href = "indexprj.html";
-      alert("Usuário cadastrado com sucesso!! Clique em Voltar à página inicial.");
+      alert("Usuário cadastrado com sucesso!!");
     } else {
       alert("As senhas não conferem, tente novamente.");
     }
