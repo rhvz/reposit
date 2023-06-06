@@ -30,3 +30,15 @@ function validarSenhaRed() {
   validarCampos();
   senhared();
 }
+
+function user() {
+  var admin = document.getElementById("admin").value;
+  var senha = document.getElementById("senha").value;
+
+  if (admin === 'admin' || senha === '12345') {
+    alert("Seja bem vindo!");
+  }else {
+    alert("Usuário ou senha incorretos.");
+  }
+
+}
