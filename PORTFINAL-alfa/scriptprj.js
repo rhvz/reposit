@@ -32,10 +32,10 @@ function validarSenhaRed() {
 }
 
 function user() {
-  var admin = document.getElementById("admin").value;
+  var email = document.getElementById("email").value;
   var senha = document.getElementById("senha").value;
 
-  if (admin === 'admin' || senha === '12345') {
+  if (email === 'admin' || senha === '12345') {
     alert("Seja bem vindo!");
   }else {
     alert("Usuário ou senha incorretos.");
