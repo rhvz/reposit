@@ -5,30 +5,24 @@ function validarCampos() {
   var senha2 = document.getElementById("senha2").value;
 
   if (email && user && senha && senha2) {
-    alert("Usuário cadastrado com sucesso!!");
-    window.location.href = "indexprj.html";
+    if (senha === senha2) {
+      alert("Usuário cadastrado com sucesso!! Clique em Voltar à página inicial.");
+      window.location.href = "indexprj.html";
+    } else {
+      alert("As senhas não conferem, tente novamente.");
+    }
+    return true;
   } else {
     alert("Por favor, preencha todos os campos antes de continuar.");
-  }
-}
-
-function senhared() {
-  var senha = document.getElementById("senha").value;
-  var senha2 = document.getElementById("senha2").value;
-
-  if (senha === '' || senha2 === '') {
-    alert("Os campos não podem ficar vazios.");
-  } else if (senha === senha2) {
-    alert("Senha redefinida com sucesso!!");
-    window.location.href = "indexprj.html";
-  } else {
-    alert("As senhas não conferem, tente novamente.");
+    return false;
   }
 }
 
 function validarSenhaRed() {
-  validarCampos();
-  senhared();
+  var camposValidos = validarCampos();
+  if (camposValidos) {
+    senhared();
+  }
 }
 
 function user() {
