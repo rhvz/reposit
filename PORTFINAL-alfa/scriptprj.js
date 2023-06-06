@@ -1,10 +1,10 @@
 function validarCampos() {
   var email = document.getElementById("email").value;
   var user = document.getElementById("user").value;
-  var senha = document.getElementById("senha").value;
-  var senha2 = document.getElementById("senha2").value;
+  var senhaa = document.getElementById("senhaa").value;
+  var senhaa2 = document.getElementById("senhaa2").value;
 
-  if (email && user && senha && senha2) {
+  if (email && user && senhaa && senhaa2) {
      if (senha === senha2) {
       window.location.href = "indexprj.html";
       alert("Usuário cadastrado com sucesso!!");
@@ -15,6 +15,19 @@ function validarCampos() {
   } else {
     alert("Por favor, preencha todos os campos antes de continuar.");
     return false;
+  }
+}
+
+function senhared() {
+  var senha = document.getElementById("senha").value;
+  var senha2 = document.getElementById("senha2").value;
+
+  if (senha === '' || senha2 === '') {
+    alert("Os campos não podem ficar vazios.");
+  } else if (senha === senha2) {
+    alert("Senha redefinida com sucesso!!");
+    } else {
+    alert("As senhas não conferem, tente novamente.");
   }
 }
 
