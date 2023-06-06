@@ -16,7 +16,7 @@
             <input type="text" name="email" placeholder="Seu email...">
             <input type="password" name="senha" placeholder="Sua senha...">
             <p class="senha"><a href="redsenha.html">Esqueceu a senha?</a></p>
-            <input type="submit" name="acao" value="Enviar" onclick="window.location.href='indexprj.html'">
+            <input type="submit" name="acao" value="Enviar" onclick="event.preventDefault(); user()">
             <p class="cad">Ainda não tem uma conta? <a href="signup.html">Cadastre-se</a></p>
             <p class="cad"><a href="indexprj.html">Voltar à página inicial</a></p>
         </form>
